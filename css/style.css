@@ -1,5 +1,9 @@
+/*Шрифты*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
+
+
+/*Обнуление*/
 *{
     padding: 0;
     margin: 0;
@@ -14,11 +18,17 @@ hr{
 
 
 
+/*Основные стили для body(фон,шрифт), а так же черный блок для панели навигации*/
 body{
     background:center no-repeat url('https://images8.alphacoders.com/546/thumb-1920-546896.jpg') fixed;
     background-size: cover ;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+@media(max-width:992px){
+    body{
+        font-size: 14px;
+    }
 }
 .block1{
     width: 100%;
@@ -27,10 +37,15 @@ body{
     font-size: 12px;
     color: #fff;
 }
+@media(max-width:992px){
+    .block1{
+        height: 50px;
+    }
+}
 
 
 
-
+/*Основной блок "контейнер"*/
 .container{
     max-width: 1200px;
     height: 100%;
@@ -42,14 +57,36 @@ body{
     right: 0;
     color: azure;
 }
+@media(max-width:1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media(max-width:992px){
+    .container{
+        max-width:750px;
+    }
+}
+@media(max-width:768px){
+    .container{
+        max-width:none;
+    }
+
+}
 
 
 
 
+/*Блок навигационой панели*/
 nav{
     display: flex;
     justify-content: space-between;
     height: 74px;
+}
+@media(max-width:992px){
+    nav{
+        height: 50px;
+    }
 }
 .logo a{
     display: block;
@@ -61,12 +98,15 @@ nav{
     font-size: 34px;
     transition: 0.4s;
 }
+@media(max-width:992px){
+    .logo a{
+        font-size: 20px;
+        padding: 13px;
+    }
+}
 .logo a:hover{
     text-shadow: 2px 1px #BF2A2C;
     transition: 0.4s;
-}
-.btns{
-    width:40%;
 }
 .btns ul{
     display: flex;
@@ -79,6 +119,12 @@ nav{
     color:#fff;
     transition: 0.4s;
 }
+@media(max-width:992px){
+    .btns li a{
+        font-size: 10px;
+        padding: 19px;
+    }
+}
 .btns li a:hover{
     background-color: dimgrey;
     transition: 0.4s;
@@ -86,15 +132,25 @@ nav{
 
 
 
-
+/*центральный блок с контентом и навигационной панелью*/
 section{
     display: flex;
 }
+
+
+
+/*Блок с контентом*/
 article{
     background: #fff;
     color: black;
     width: 80%;
     padding: 20px;
+}
+@media(max-width:768px){
+    article{
+        width:100%;
+    }
+
 }
 .article1 p , .article1 img , .article1 hr , .article1 h3{
     margin-top: 10px;
@@ -105,9 +161,15 @@ article{
 
 
 
+/*Блок навигационной панели*/
 aside{
     width: 20%;
     background-color: darkgrey;
+}
+@media(max-width:768px){
+    aside{
+        display: none;
+    }
 }
 .fix{
     position: fixed;
@@ -116,9 +178,7 @@ aside{
     margin-right: 20px;
     margin-top: 30px;
 }
-.fix li:first-child{
-    font-size: 16px;
-}
+
 .fix li{
     margin-top: 10px;
     color:black;
@@ -130,9 +190,20 @@ aside{
 .fix li a:hover{
     text-decoration: underline;
 }
+@media(max-width:1200px){
+    .fix li{
+        font-size: 12px;
+    }
+}
+@media(max-width:992px){
+    .fix li{
+        font-size: 10px;
+    }
+}
 
 
 
+/*Футер*/
 footer{
     color: black;
     background-color: darkgrey;
