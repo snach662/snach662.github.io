@@ -9,16 +9,14 @@ article{
 article hr, article p, article div{
     margin-top: 10px;
 }
-.screen{
-    padding: 15px;
-}
 .screen img{
     width: 100%;
     margin-bottom: 15px;
 }
 
-/*Флекс-сетка для блоков топа*/
 
+
+/*Флекс-сетка для блоков топа*/
 .row1_top, .row2_top, .row3_top{
     display: flex;
 }
