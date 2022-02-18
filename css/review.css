@@ -14,3 +14,9 @@
         font-size: 7px;
     }
 }
+@media(max-width:768px){
+    iframe{
+        width: 350px;
+    }
+
+}
