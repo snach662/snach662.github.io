@@ -206,6 +206,9 @@ aside{
 /*Футер*/
 footer{
     color: black;
-    background-color: darkgrey;
+    background-color:#bebebe;
     padding: 10px;
+}
+footer a{
+    color: black;
 }

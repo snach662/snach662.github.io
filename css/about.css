@@ -1,0 +1,19 @@
+aside{
+    display: none;
+}
+article{
+    width: 100%;
+    background-color:#ad9e9e;
+}
+section{
+    display: block;
+}
+.main{
+    display: flex;
+}
+.photo{
+    border: 2px solid black;
+}
+.second{
+    margin-top: 15px;
+}
