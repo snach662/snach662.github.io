@@ -1,0 +1,56 @@
+aside{
+    display: none;
+}
+article{
+    width: 100%;
+    background-color: #333;
+    color:#fff;
+}
+article hr, article p, article div{
+    margin-top: 10px;
+}
+.screen{
+    padding: 15px;
+}
+.screen img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/*Флекс-сетка для блоков топа*/
+
+.row1_top, .row2_top, .row3_top{
+    display: flex;
+}
+.row1_top div, .row2_top div, .row3_top div{
+    margin: 15px;
+    width: 33.33%;
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border: 2px solid black;
+}
+.row1_top div p, .row2_top div p, .row3_top div p{
+    margin-left: 10px;
+}
+.row1_top div img, .row2_top div img, .row3_top div img{
+    border-right: 2px solid black;
+}
+@media(max-width:992px){
+    .row1_top div, .row2_top div, .row3_top div{
+        margin: 10px;
+        font-size: 10px;
+    }
+}
+@media(max-width:768px) {
+    .row1_top, .row2_top, .row3_top{
+        display: block;
+    }
+    .row1_top div, .row2_top div, .row3_top div{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
