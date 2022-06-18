@@ -27,7 +27,7 @@
     .h{
         height: 64px;
         line-height: 64px;
-        font-size: 32px;
+        font-size: 24px;
     }
 }
 
@@ -132,7 +132,7 @@
 @media(max-width:768px){
     .choose ul li a{
         height: 100px;
-        font-size: 12px;
+        font-size: 7px;
     }
 }
 .choose li :hover{
